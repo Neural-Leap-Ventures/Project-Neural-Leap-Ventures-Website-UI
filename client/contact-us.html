@@ -286,7 +286,7 @@ a,
                       id="wf-form-Company-name"
                       name="wf-form-Company-name"
                       data-name="Company name"
-                      action="http://localhost:9000/.netlify/functions/contactUs"
+                      action="/.netlify/functions/contactUs"
                       method="post"
                       class="form-wrap"
                     >
@@ -595,31 +595,5 @@ a,
     ></script>
     <script src="js/webflow.js" type="text/javascript"></script>
     <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script>
-      //send form details
-      console.log('1')
-      async function serverSideTracking() {
-        console.log('2')
-        var firstName = document.getElementById('name')
-        var lastName = document.getElementById('Last-name')
-        var companyName = document.getElementById('company-name')
-        var companySize = document.getElementById('company-size')
-        var phone = document.getElementById('Phone-number')
-        console.log(firstName, lastName, companyName, companySize, phone)
-        await axios
-          .post('http://localhost:9000/.netlify/functions/contactUs', {
-            firstName: firstName.value,
-            lastName: lastName.value,
-            companyName: companyName.value,
-            companySize: companySize.value,
-            phone: phone.value,
-          })
-          .then((response) => {
-            console.log('Success: ' + response.data)
-          })
-          .catch((err) => console.log('Failed: ' + err))
-      }
-    </script>
   </body>
 </html>
