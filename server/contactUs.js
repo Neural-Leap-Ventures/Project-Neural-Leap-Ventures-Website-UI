@@ -13,11 +13,14 @@ exports.handler = async (event, context) => {
   const phone = array[4].split('pnumber=')
 
   try {
-    mongoose.connect(process.env.MONGO_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useFindAndModify: false,
-    })
+    mongoose.connect(
+      'mongodb+srv://neuralleap:ElonMusk123@neuralleap.6zgols5.mongodb.net/?retryWrites=true&w=majority',
+      {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useFindAndModify: false,
+      }
+    )
 
     const shortIdVariable = shortid.generate()
 
