@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "cookie": "^0.5.0",
+    "dotenv": "^16.0.3",
     "facebook-nodejs-business-sdk": "^15.0.0",
     "mongoose": "^5.13.3",
     "netlify-lambda": "^2.0.15",

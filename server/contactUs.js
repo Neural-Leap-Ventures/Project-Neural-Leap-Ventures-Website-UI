@@ -1,8 +1,8 @@
+require('dotenv').config()
 const mongoose = require('mongoose')
 require('./customFunctions/contactModel')
 const User = mongoose.model('contacts')
 const shortid = require('shortid')
-//const cookie = require('cookie')
 
 exports.handler = async (event, context) => {
   const array = event.body.split('&')
@@ -12,29 +12,32 @@ exports.handler = async (event, context) => {
   const companySize = array[3].split('field=')
   const phone = array[4].split('pnumber=')
 
+  const a = decodeURIComponent(firstName[1])
+  const b = decodeURIComponent(lastName[1])
+  const c = decodeURIComponent(companyName[1])
+  const d = decodeURIComponent(companySize[1])
+  const e = decodeURIComponent(phone[1])
+  //console.log('array', a, b, c, d, e)
   try {
-    mongoose.connect(
-      'mongodb+srv://neuralleap:ElonMusk123@neuralleap.6zgols5.mongodb.net/?retryWrites=true&w=majority',
-      {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        useFindAndModify: false,
-      }
-    )
+    mongoose.connect(process.env.MONGODB_URI_DEPLOY, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useFindAndModify: false,
+    })
 
     const shortIdVariable = shortid.generate()
 
     const user = await new User({
       referralId: shortIdVariable,
-      first_name: firstName[1],
-      last_name: lastName[1],
-      company_name: companyName[1],
-      company_size: companySize[1],
-      phone_number: phone[1],
+      first_name: a,
+      last_name: b,
+      company_name: c,
+      company_size: d,
+      phone_number: e,
     })
 
     await user.save()
-
+    mongoose.disconnect()
     return {
       statusCode: 200,
       body: 'Success',
