@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ title }}</title>
+	<link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="/assets/css/blog-style.css" rel="stylesheet" type="text/css">
+	<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+
+	<!--=============================Nav bar===============================-->
+	<div class="position-absolute top-0 w-100 z-index-1">
+		<div class="container">
+			<nav class="navbar navbar-expand-md navbar-dark">
+			  <div class="container-fluid">
+				<a class="navbar-brand" href="../../index.html"><img src="/assets/images/brand-logo.svg" alt="brand"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse ms-md-5" id="navbarSupportedContent">
+				  <ul class="navbar-nav me-auto mb-2 mb-md-0">
+					<li class="nav-item">
+					  <a class="nav-link" href="../../pricing.html">Pricing</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="../../about.html">About Us</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="../../mission.html">Mission</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="../../why-us.html">Why Us</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="../../capabilities.html">Capabilities</a>
+					</li>
+				  </ul>
+				  <form class="d-flex">
+					<button class="btn btn-nav">Get Started</button>
+				  </form>
+				</div>
+			  </div>
+			</nav>			
+		</div>
+	</div>
+
+	<!--=============================Section 1===============================-->
+	<div class="section1">
+		<div class="container">
+			<h1 class="blog-page-header">{{ title }}</h1>
+			<div class="row">
+				<div class="col-md-2 d-flex mb-2"><button class="blog-tab-pill">{{ category }}</button></div>
+				<div class="col-md-2 d-flex mb-2"><button class="blog-tab-pill">{{ author }}</button></div>
+				<div class="col-md-2 d-flex mb-2"><button class="blog-tab-pill">{{ date | postDate }}</button></div>
+			</div>
+			<!--=============================Blog Image===============================-->
+			<div class="mt-5">
+				<img src="{{ image }}" alt="..." class="w-100">
+			</div>
+		</div>
+	</div>
+	
+	
+	<!--=============================Blog Contents===============================-->
+	<div class="container">
+		
+		<!--=============================Blog Content===============================-->
+		<div class="blog-content">
+            {{ content | safe }}
+        </div>
+		
+		
+	</div>
+
+
+
+	<!--=============================Footer===============================-->
+	<div class="footer">
+		<div class="container">
+			<div class="d-flex justify-content-center mb-4">
+				<a href="index.html"><img src="/assets/images/logo-footer.svg" alt="..."></a>
+			</div>
+			<div class="d-flex justify-content-center mb-4">
+				<a href="#" class="footer-icon"><img src="/assets/images/twitter-icon.svg" alt="tw"></a>
+				<a href="#" class="footer-icon"><img src="/assets/images/fb-icon.svg" alt="fb"></a>
+				<a href="#" class="footer-icon"><img src="/assets/images/linkedin-icon.svg" alt="li"></a>
+			</div>
+			<div class="footer-menu">
+				<a href="../../old-home.html">Home</a>
+				<a href="../../mission.html">Mission</a>
+				<a href="../../pricing.html">Pricing</a>
+				<a href="../../about.html">About Us</a>
+			</div>
+		</div>
+	</div>
+
