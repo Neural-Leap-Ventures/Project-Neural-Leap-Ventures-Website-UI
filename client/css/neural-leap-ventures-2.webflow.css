@@ -2279,8 +2279,8 @@ ul {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
   border-radius: 20px;
-  margin-bottom: 10px;
-  padding: 35px;
+  margin-bottom: 0;
+  padding: 35px 35px 0;
 }
 
 .question-div {
@@ -2294,7 +2294,7 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
   font-family: PT Sans, sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 130%;
 }
@@ -2307,7 +2307,7 @@ ul {
 .paragraph-30 {
   color: #fff;
   font-family: PT Sans, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 140%;
 }
 
@@ -3137,7 +3137,7 @@ ul {
 }
 
 .heading-36.title-1 {
-  font-size: 75px;
+  font-size: 70px;
   line-height: 110%;
 }
 
@@ -3163,7 +3163,7 @@ ul {
 }
 
 .text-block-11.h-50.text-35px, .text-block-11.text-35px {
-  font-size: 35px;
+  font-size: 30px;
   line-height: 120%;
 }
 
@@ -3200,7 +3200,7 @@ ul {
 }
 
 .text-block-22.left.fs-20.fff.para {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 140%;
 }
 
@@ -3209,7 +3209,7 @@ ul {
 }
 
 .text-block-22.left.fs-20.para {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 140%;
 }
 
@@ -3319,7 +3319,7 @@ ul {
 }
 
 .text-block-23.text-35px {
-  font-size: 35px;
+  font-size: 30px;
   line-height: 120%;
 }
 
@@ -3380,7 +3380,7 @@ ul {
 
 .text-block-44 {
   color: #fff;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 600;
   line-height: 112%;
 }
@@ -3388,7 +3388,7 @@ ul {
 .text-block-45 {
   color: #5a5a5a;
   margin-top: 25px;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 140%;
 }
 
@@ -3421,7 +3421,7 @@ ul {
 }
 
 .text-block-46.text-35px {
-  font-size: 35px;
+  font-size: 30px;
   line-height: 120%;
 }
 
@@ -3476,7 +3476,7 @@ ul {
 .text-block-47 {
   color: #fff;
   margin-top: 50px;
-  font-size: 38px;
+  font-size: 45px;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -3518,7 +3518,7 @@ ul {
 .text-block-48.centre-subt {
   text-align: center;
   margin-bottom: 25px;
-  font-size: 23px;
+  font-size: 22px;
 }
 
 .text-block-48.mt-0 {
@@ -3603,8 +3603,8 @@ ul {
   background-color: rgba(0, 0, 0, 0);
   border-bottom: 0 solid #8d8d8d;
   border-radius: 0;
-  margin-bottom: 10px;
-  padding: 35px;
+  margin-bottom: 0;
+  padding: 35px 35px 0;
 }
 
 .div-block-526 {
@@ -3615,12 +3615,16 @@ ul {
   max-width: 1200px;
 }
 
+.div-block-526.mw-1200.mt-0 {
+  margin-top: 0;
+}
+
 .heading-37 {
   color: #fff;
   margin-top: 0;
   margin-bottom: 0;
   font-family: Inter, sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 130%;
 }
@@ -3646,7 +3650,7 @@ ul {
 .paragraph-35 {
   color: #898989;
   font-family: Inter, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 140%;
 }
 
@@ -3746,9 +3750,9 @@ ul {
 .mission-card {
   width: 48%;
   grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-row-gap: 0px;
   align-items: flex-start;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   display: flex;
 }
 
@@ -3758,16 +3762,16 @@ ul {
   background-image: linear-gradient(#fff 20%, rgba(0, 0, 0, 0));
   -webkit-background-clip: text;
   background-clip: text;
-  font-size: 7rem;
+  font-size: 6.5rem;
   font-weight: 800;
   line-height: 100%;
 }
 
 .m-data {
   color: #898989;
-  font-size: 23px;
+  font-size: 22px;
   font-weight: 600;
-  line-height: 110%;
+  line-height: 120%;
 }
 
 .text-block-51 {
