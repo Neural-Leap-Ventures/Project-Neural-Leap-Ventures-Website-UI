@@ -2307,7 +2307,7 @@ ul {
 .paragraph-30 {
   color: #fff;
   font-family: PT Sans, sans-serif;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 140%;
 }
 
@@ -3267,6 +3267,10 @@ ul {
   margin-top: 50px;
 }
 
+.our-mission.mt-100.mt-0 {
+  margin-top: 0;
+}
+
 ._3 {
   grid-column-gap: 25px;
   border: 0 solid #455a64;
@@ -3349,7 +3353,7 @@ ul {
 }
 
 .text-block-42.center.title-2 {
-  font-size: 60px;
+  font-size: 45px;
   line-height: 120%;
 }
 
@@ -3476,7 +3480,7 @@ ul {
 .text-block-47 {
   color: #fff;
   margin-top: 50px;
-  font-size: 45px;
+  font-size: 30px;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -3484,7 +3488,8 @@ ul {
 .text-block-47.text-center {
   color: #898989;
   text-align: center;
-  font-size: 26px;
+  margin-top: 0;
+  font-size: 17px;
 }
 
 .text-block-47.text-70 {
@@ -3498,27 +3503,47 @@ ul {
 }
 
 .text-block-47.text-70.uppercase.inv-h2 {
-  font-size: 45px;
+  font-size: 30px;
 }
 
 .text-block-47.title-2 {
-  font-size: 40px;
+  font-size: 45px;
   line-height: 1.2;
+}
+
+.text-block-47.text-30px {
+  font-size: 30px;
+}
+
+.text-block-47.text-30px.mt-0 {
+  margin-top: 0;
+}
+
+.text-block-47.text-30px.mt-0.title-2 {
+  font-size: 45px;
 }
 
 .text-block-48 {
   color: #898989;
   margin-top: 25px;
   margin-bottom: 50px;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 600;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 .text-block-48.centre-subt {
   text-align: center;
   margin-bottom: 25px;
-  font-size: 22px;
+  font-size: 17px;
+}
+
+.text-block-48.centre-subt.text-17px {
+  font-size: 17px;
+}
+
+.text-block-48.centre-subt.text-17px.mt-1 {
+  margin-top: 10px;
 }
 
 .text-block-48.mt-0 {
@@ -3531,11 +3556,11 @@ ul {
 }
 
 .text-block-48.text-center.text-22 {
-  font-size: 23px;
+  font-size: 18px;
 }
 
 .text-block-48.text-22 {
-  font-size: 20px;
+  font-size: 17px;
   line-height: 1.4;
 }
 
@@ -3650,7 +3675,7 @@ ul {
 .paragraph-35 {
   color: #898989;
   font-family: Inter, sans-serif;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 140%;
 }
 
@@ -3769,7 +3794,8 @@ ul {
 
 .m-data {
   color: #898989;
-  font-size: 22px;
+  margin-top: 10px;
+  font-size: 17px;
   font-weight: 600;
   line-height: 120%;
 }
@@ -3786,8 +3812,8 @@ ul {
   width: 90%;
   max-width: 1500px;
   min-width: 0;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
   color: #fff;
   justify-content: space-between;
   align-items: center;
@@ -3807,7 +3833,9 @@ ul {
 }
 
 .nav-menu-4 {
+  width: auto;
   color: #fff;
+  justify-content: space-between;
   align-items: center;
   display: flex;
 }
