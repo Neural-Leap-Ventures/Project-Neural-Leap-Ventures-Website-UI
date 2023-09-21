@@ -2267,7 +2267,8 @@ ul {
 
 .heading-29.title-1 {
   margin-top: 0;
-  font-size: 75px;
+  font-size: 70px;
+  font-weight: 700;
   line-height: 110%;
 }
 
@@ -2293,7 +2294,7 @@ ul {
   color: #ff8d7c;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: PT Sans, sans-serif;
+  font-family: Manrope, sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 130%;
@@ -2306,7 +2307,7 @@ ul {
 
 .paragraph-30 {
   color: #fff;
-  font-family: PT Sans, sans-serif;
+  font-family: Manrope, sans-serif;
   font-size: 17px;
   line-height: 140%;
 }
@@ -3137,6 +3138,7 @@ ul {
 }
 
 .heading-36.title-1 {
+  font-family: Manrope, sans-serif;
   font-size: 70px;
   line-height: 110%;
 }
@@ -3489,6 +3491,7 @@ ul {
   color: #898989;
   text-align: center;
   margin-top: 0;
+  font-family: Manrope, sans-serif;
   font-size: 17px;
 }
 
@@ -3507,7 +3510,7 @@ ul {
 }
 
 .text-block-47.title-2 {
-  font-size: 45px;
+  font-size: 30px;
   line-height: 1.2;
 }
 
@@ -3520,7 +3523,7 @@ ul {
 }
 
 .text-block-47.text-30px.mt-0.title-2 {
-  font-size: 45px;
+  font-size: 30px;
 }
 
 .text-block-48 {
@@ -3556,7 +3559,7 @@ ul {
 }
 
 .text-block-48.text-center.text-22 {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .text-block-48.text-22 {
@@ -3648,7 +3651,7 @@ ul {
   color: #fff;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Inter, sans-serif;
+  font-family: Manrope, sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 130%;
@@ -3674,7 +3677,7 @@ ul {
 
 .paragraph-35 {
   color: #898989;
-  font-family: Inter, sans-serif;
+  font-family: Manrope, sans-serif;
   font-size: 17px;
   line-height: 140%;
 }
@@ -3812,29 +3815,34 @@ ul {
   width: 90%;
   max-width: 1500px;
   min-width: 0;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   color: #fff;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   padding-left: 0;
   padding-right: 0;
-  display: flex;
+  display: block;
   overflow: visible;
 }
 
 .navbar-4 {
   max-width: 100%;
+  min-width: 100%;
   background-color: rgba(0, 0, 0, 0);
-  padding-top: 15px;
-  padding-bottom: 15px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 15px 0;
 }
 
 .nav-menu-4 {
   width: auto;
+  grid-column-gap: 20px;
   color: #fff;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
   display: flex;
@@ -3846,6 +3854,8 @@ ul {
 
 .nav-link-3 {
   color: #fff;
+  padding-left: 18px;
+  padding-right: 18px;
   font-size: 16px;
   font-weight: 500;
 }
@@ -3895,6 +3905,12 @@ ul {
 
 .div-block-534 {
   margin-top: 0;
+}
+
+.nav-flex {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
 }
 
 @media screen and (min-width: 1280px) {
