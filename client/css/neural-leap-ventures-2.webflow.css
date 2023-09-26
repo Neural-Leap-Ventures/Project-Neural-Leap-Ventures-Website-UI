@@ -3169,6 +3169,10 @@ ul {
   line-height: 120%;
 }
 
+.text-block-11.text-35px.text-center {
+  text-align: center;
+}
+
 ._1 {
   border-bottom: 1px solid #fff;
   border-right: 1px solid #fff;
@@ -3455,7 +3459,6 @@ ul {
 
 .div-block-522.about-us {
   background-image: none;
-  background-position: 0 0;
   background-repeat: repeat;
 }
 
@@ -3578,6 +3581,10 @@ ul {
   background-image: url('../images/Group-1000004069.png');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.about-us-v2.bg-1.minheight-100 {
+  min-height: 100px;
 }
 
 .about-us-v2.new-bg {
@@ -3710,9 +3717,12 @@ ul {
 }
 
 .image-40 {
-  width: auto;
+  width: 80%;
   max-width: 1000px;
   margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 ._w-100 {
@@ -3728,7 +3738,11 @@ ul {
 }
 
 .image-41 {
+  width: 80%;
   max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .bg04011e {
@@ -3875,7 +3889,6 @@ ul {
 
 .bg-dark.bd-contact {
   background-image: url('../images/Vector.png');
-  background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -3899,8 +3912,10 @@ ul {
 }
 
 .div-block-533 {
-  margin-top: 50px;
+  margin-top: 0;
   margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .div-block-534 {
@@ -3910,6 +3925,57 @@ ul {
 .nav-flex {
   justify-content: space-between;
   align-items: center;
+  display: flex;
+}
+
+.div-block-535 {
+  max-width: 1000px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.div-block-535.v-space-50 {
+  grid-row-gap: 50px;
+}
+
+.image-42 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading-38 {
+  color: #fff;
+  text-align: center;
+  font-family: Manrope, sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.text-span-18 {
+  color: #ff8d7c;
+}
+
+.paragraph-36 {
+  max-width: 800px;
+  color: #fff;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: PT Sans, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.min-height-100 {
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
   display: flex;
 }
 
@@ -4166,6 +4232,11 @@ ul {
 
   .div-block-477, .input-filed-2.phone-number {
     height: 50px;
+  }
+
+  .heading-38 {
+    font-size: 60px;
+    line-height: 70px;
   }
 }
 
@@ -6211,6 +6282,11 @@ ul {
 
   .mission-card {
     display: block;
+  }
+
+  .heading-38 {
+    font-size: 45px;
+    line-height: 55px;
   }
 }
 
